@@ -20,5 +20,8 @@ check_result $? "install fail"
 git config --global user.email "azssjli@163.com"
 git config --global user.name "yonh"
 
+echo 'alias gst="git status"' >> ~/.bashrc
+echo 'alias ga="git add"' >> ~/.bashrc
+
 
 echo "done..."
