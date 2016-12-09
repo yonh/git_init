@@ -5,6 +5,9 @@ check_result() {
     fi
 }
 git_install() {
+	if [ -x "/usr/bin/zypper" ]; then
+		zypper refs && zypper install -y git
+	fi
 	if [ -x "/usr/bin/apt-get" ]; then
 		apt-get update && apt-get install -y git
 	fi
